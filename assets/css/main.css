@@ -50,9 +50,15 @@
 	top: 85%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	padding-top: 150px;
   }
 
-
+  #slideshow h1 {
+	user-select: none;
+  }
+  #slideshow h2 {
+	user-select: none;
+  }
 
   
   #slideshow #slidewindow {
@@ -3073,6 +3079,7 @@ input, select, textarea {
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
+
 		}
 
 			#header .logo > * {
@@ -3082,6 +3089,7 @@ input, select, textarea {
 
 			#header .logo .symbol {
 				margin-right: 0.65em;
+				
 			}
 
 				#header .logo .symbol img {
