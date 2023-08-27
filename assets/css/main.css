@@ -6,7 +6,138 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+.image-top-header-div{
+	margin: auto;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-bottom: 5%;
+}
+.image-top-header-div > h2 {
+	padding-top: 2%;
+	font-size: 45%;
+	text-align: center;
+}
+.image-top-header-div > h1{
+	font-size: 150%;
+	text-align: center;
+  }
+.image-top-header-excel{
+	width: 10%;
+	height: 10%;
+}
 
+*, *:before, *:after {
+	box-sizing: border-box;
+  }
+  
+  /* Slideshow */
+  
+  #slideshow {
+	width: 60%;
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+
+
+  
+  #slideshow #slidewindow {
+	position: relative;
+	overflow: hidden;
+  }
+  
+  #slideshow #slidewindow div {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	transition: transform .5s ease;
+  }
+  
+  #slideshow #slidewindow div img {
+	display: block;
+	width: 100%;
+  }
+  
+  /* Controls */
+  
+  #slideshow #controls {
+	text-align: center;
+	transition: all 200ms ease-in-out;
+  }
+  
+  #slideshow #controls #next, #slideshow #controls #prev {
+	position: relative;
+	width: 48px;
+	height: 48px;
+	margin: 8px;
+	cursor: pointer;
+  }
+  
+  #slideshow #controls #next {
+	float: right;
+  }
+  
+  #slideshow #controls #prev {
+	float: left;
+  }
+  
+  #slideshow #controls #next div, #slideshow #controls #prev div {
+	position: absolute;
+	pointer-events: none;
+	border-style: solid;
+	border-color: #383838;
+	border-width: 2px 2px 0 0;
+	content: '';
+	display: inline-block;
+	left: 18px;
+	top: 18px;
+	transform: rotate(45deg);
+	vertical-align: top;
+	width: 8px;
+	height: 8px;
+  }
+  
+  #slideshow #controls #prev div {
+	transform: rotate(-135deg);
+  }
+  
+  #slideshow #controls #dots {
+	margin: auto;
+	display: inline-block;
+	padding: 0;
+	list-style-type: none;
+	width: auto;
+  }
+  
+  #slideshow #controls #dots li {
+	display: inline-block;
+	border: 2px solid #383838;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin: 26px 4px;
+  }
+  
+  #slideshow #controls #dots .active {
+	background: #383838;
+  }
+  
+  #slideshow #controls #dots li:hover,
+  #slideshow #controls #next:hover,
+  #slideshow #controls #prev:hover {
+	transform: scale(1.125);
+  }
+  
+  #slideshow #controls #dots li:active,
+  #slideshow #controls #next:active,
+  #slideshow #controls #prev:active {
+	transform: scale(1);
+  }
 .myphoto{
 	width: 50%;
 	height: 50%;
@@ -2795,7 +2926,7 @@ input, select, textarea {
 			}
 
 			.tiles article.style2 > .image:before {
-				background-image: url('images/listphoto.jpg');
+				background-image: url('images/excelback.jpg');
 				background-size: cover; /* Maintain aspect ratio and cover the entire element */
 				background-position: center center; /* Center the image */
 			}
